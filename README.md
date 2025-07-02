@@ -29,7 +29,7 @@ To clean and analyze layoff data by:
 - Yearly Rankings: Pinpointed top 5 companies with most layoffs per year
 
 🗂️ Dataset  
-- You can find the dataset used [here](https://ourworldindata.org/covid-deaths)
+- You can find the dataset [here](https://ourworldindata.org/covid-deaths)
 - Fields include: company, industry, location, total_laid_off, percentage_laid_off, date, country, funds_raised_millions, etc.
 
 
