@@ -36,9 +36,7 @@ To:
 - View PopulationVax for simplified downstream reporting
 
 🗂️ Dataset
-- Tables:
-- PortfolioProject.dbo.Covid_Deaths
-- PortfolioProject.dbo.Covid_Vaccinations
+- Tables: Covid_Deaths and Covid_Vaccinations
 - Fields Used:
 - location, date, population, total_cases, total_deaths, new_vaccinations, new_vaccinations_smoothed
 - Source: Public COVID-19 global datasets [(Our World in Data)](https://ourworldindata.org/covid-deaths)
