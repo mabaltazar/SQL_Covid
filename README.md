@@ -1,26 +1,36 @@
 # 🦠 COVID-19 Data Exploration Project  
-This project showcases exploratory data analysis on global COVID-19 data using Microsoft SQL Server. The analysis was conducted on publicly available datasets containing case counts, deaths, population figures, and vaccination statistics. The goal was to uncover patterns in infections, death rates, population impact, and vaccine rollout trends across countries and continents.
+This project features end-to-end data cleaning and exploratory analysis on global layoff data using SQL. The goal was to uncover patterns in workforce reduction across industries, companies, and countries over time. The project also applies advanced SQL techniques to track temporal trends, remove duplicates, standardize messy entries, and evaluate the scale and progression of layoffs.  
+
+🎯 Objective  
+To clean and analyze layoff data by:  
+- Identifying key trends in layoffs across time and geography
+- Profiling the most heavily affected companies and industries
+- Applying SQL best practices for scalable and efficient exploratio
 
 🧰 Tools Used
 - Microsoft SQL Server
-- SQL Window Functions, CTEs, Temp Tables, Views
-- COVID-19 Datasets (Deaths and Vaccinations)
+- SQL Window Functions, CTEs, Temp Tables  
 
-📊 Key Explorations
-- Total cases and deaths by country, with calculated death percentages
-- Infection rates as a percentage of country population
-- Top countries by infection rate and death count
-- Death rates by continent and aggregated global death percentage
-- Analysis of vaccination rollout by location and time
-- Rolling vaccination totals using window functions
-- Percentage of population vaccinated using CTEs and temp tables
+⚙️ Steps Taken  
+- Created Staging Tables to isolate and clean raw data
+- Removed duplicate records using ROW_NUMBER() and deleted flagged rows
+- Standardized text fields (trimming whitespace, fixing country and industry names)
+- Formatted date column into proper DATE type using STR_TO_DATE()
+- Imputed missing industry values using self-joins on company + location
+- Deleted records with unusable NULL values
+- Explored temporal trends by year, month, and rolling cumulative totals
+- Ranked top companies per year by layoff volume using DENSE_RANK()  
 
-🧮 SQL Logic Summary
-- Joins between deaths and vaccination tables on location and date
-- Aggregations for daily and cumulative trends
-- Window functions to compute running totals and vaccination rollouts
-- CTEs and Temp Tables to cleanly structure staged calculations
-- Views created for reusable vaccination metrics per country
+📊 Analysis Highlights  
+- Highest Total Layoffs: Identified top companies and industries affected
+- Percentage-Based Layoffs: Flagged companies with 100% workforce reductions
+- Industry & Country Breakdown: Analyzed layoffs by geography and sector
+- Rolling Totals: Used window functions to compute cumulative monthly layoffs
+- Yearly Rankings: Pinpointed top 5 companies with most layoffs per year
+
+🗂️ Dataset  
+- You can find the dataset used [here](https://ourworldindata.org/covid-deaths)
+- Fields include: company, industry, location, total_laid_off, percentage_laid_off, date, country, funds_raised_millions, etc.
 
 
 
