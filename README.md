@@ -40,3 +40,6 @@ To:
 - Fields Used:
 - location, date, population, total_cases, total_deaths, new_vaccinations, new_vaccinations_smoothed
 - Source: Public COVID-19 global datasets [(Our World in Data)](https://ourworldindata.org/covid-deaths)
+
+📊 Data Visualization
+- You can check my visualization for this project here -> [Covid Dashboard](https://public.tableau.com/app/profile/mark.anthony.baltazar/viz/CovidDashboard_17398551448910/Dashboard1)
